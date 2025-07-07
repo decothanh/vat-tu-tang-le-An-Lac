@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho Vật Tư Tang Lễ An Lạc - Dự Án Kinh Doanh</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .section-divider {
+            border-bottom: 3px solid #e2e8f0;
+            margin: 3rem 0;
+        }
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        .process-step {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .process-step::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background: #667eea;
+            border-radius: 50%;
+        }
+        .advantage-card {
+            transition: transform 0.3s ease;
+        }
+        .advantage-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-4">Kho Vật Tư Tang Lễ An Lạc</h1>
+            <p class="text-xl mb-6">Dự Án Kinh Doanh Chuỗi Cửa Hàng Vật Tư Tang Lễ</p>
+            <div class="bg-white bg-opacity-20 rounded-lg p-4 inline-block">
+                <p class="text-lg font-medium">Khu vực: Tỉnh Khánh Hòa và Ninh Thuận</p>
+                <p class="text-base">Đường 703, Xã Ninh Phước, Khánh Hòa</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tổng Quan Dự Án -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Tổng Quan Dự Án</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg p-8 card-shadow">
+                    <div class="icon-circle bg-blue-100 text-blue-600">
+                        <i class="fas fa-store text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Mô Hình Kinh Doanh</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Chuỗi cửa hàng chuyên cung cấp vật tư tang lễ với mô hình kinh doanh đa dạng: bán hàng trực tiếp, cho thuê thiết bị, và cung cấp dịch vụ hỗ trợ tang lễ. Phục vụ cả Phật giáo và Công giáo với đầy đủ các loại vật tư và thiết bị cần thiết.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 card-shadow">
+                    <div class="icon-circle bg-green-100 text-green-600">
+                        <i class="fas fa-map-marked-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Quy Mô Triển Khai</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Kế hoạch mở 10 điểm bán tại Khánh Hòa, tập trung vào các khu dân cư đông dân trên 100.000 người. Bắt đầu với 1 cửa hàng thử nghiệm tại Xã Ninh Phước, sau đó mở rộng dần dựa trên kết quả kinh doanh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hoạt Động Kinh Doanh -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Hoạt Động Kinh Doanh</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Bán Hàng -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 card-shadow">
+                    <div class="icon-circle bg-blue-500 text-white">
+                        <i class="fas fa-shopping-cart text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Bán Hàng</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Quan tài các loại</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Vật tư quy trình liệm</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Vật tư thờ cúng</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Nến, nhang, rượu</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Bàn thờ, linh đường</li>
+                    </ul>
+                </div>
+                
+                <!-- Cho Thuê -->
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 card-shadow">
+                    <div class="icon-circle bg-green-500 text-white">
+                        <i class="fas fa-handshake text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Cho Thuê</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Bàn phật</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Xe tang, xe đưa tang</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Rạp, bàn, ghế</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Trống, cờ, kèn</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Chiên (đạo cụ)</li>
+                    </ul>
+                </div>
+                
+                <!-- Dịch Vụ -->
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 card-shadow">
+                    <div class="icon-circle bg-purple-500 text-white">
+                        <i class="fas fa-cogs text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Dịch Vụ</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Tìm nơi chôn cất</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Dịch vụ cải táng</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Đăng ký hỏa táng</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Thiết kế bia mộ</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Thiết kế hình thờ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quy Trình Vận Hành -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Quy Trình Vận Hành</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg p-8 card-shadow">
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-600">Bán Vật Tư</h3>
+                    <div class="space-y-4">
+                        <div class="process-step">
+                            <h4 class="font-semibold text-gray-800">Bán hàng trực tiếp tại cửa hàng</h4>
+                            <p class="text-gray-600">Khách hàng có thể đến trực tiếp để lựa chọn và mua hàng</p>
+                        </div>
+                        <div class="process-step">
+                            <h4 class="font-semibold text-gray-800">Catalogue online</h4>
+                            <p class="text-gray-600">Hệ thống catalogue trực tuyến để khách hàng dễ dàng lựa chọn</p>
+                        </div>
+                        <div class="process-step">
+                            <h4 class="font-semibold text-gray-800">Combo hàng hóa</h4>
+                            <p class="text-gray-600">Combo vật tư liệm, combo bàn thờ và đồ cúng</p>
+                        </div>
+                        <div class="process-step">
+                            <h4 class="font-semibold text-gray-800">Giao hàng tận nơi</h4>
+                            <p class="text-gray-600">Dịch vụ giao hàng với xe chuyên dụng</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 card-shadow">
+                    <h3 class="text-2xl font-semibold mb-6 text-green-600">Cho Thuê & Dịch Vụ</h3>
+                    <div class="space-y-4">
+                        <div class="process-step">
+                            <h4 class="font-semibold text-gray-800">Cho thuê vật tư</h4>
+                            <p class="text-gray-600">Giao và thu hồi thiết bị cho thuê bằng xe chuyên dụng</p>
+                        </div>
+                        <div class="process-step">
+                            <h4 class="font-semibold text-gray-800">Thiết kế hình thờ</h4>
+                            <p class="text-gray-600">Dịch vụ thiết kế và in ấn hình thờ theo yêu cầu</p>
+                        </div>
+                        <div class="process-step">
+                            <h4 class="font-semibold text-gray-800">Thiết kế bia mộ</h4>
+                            <p class="text-gray-600">Thiết kế, sản xuất và cung cấp bia mộ</p>
+                        </div>
+                        <div class="process-step">
+                            <h4 class="font-semibold text-gray-800">Đăng ký hỏa táng</h4>
+                            <p class="text-gray-600">Hỗ trợ thủ tục đăng ký hỏa táng cho gia đình</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Điểm Mạnh & Lợi Thế -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Điểm Mạnh & Lợi Thế C경쟁</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4">Kế thừa từ Tang lễ Yên Bình - 20 năm kinh nghiệm</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="advantage-card bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 card-shadow">
+                    <div class="icon-circle bg-blue-500 text-white">
+                        <i class="fas fa-building text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-center">Cơ Sở Hạ Tầng</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• 2 nghĩa trang tư nhân lớn nhất Khánh Hòa</li>
+                        <li>• Kho cung ứng 4,000m²</li>
+                        <li>• Xưởng sản xuất quan tài 200 cái/tháng</li>
+                    </ul>
+                </div>
+                
+                <div class="advantage-card bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 card-shadow">
+                    <div class="icon-circle bg-green-500 text-white">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-center">Sản Xuất</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Xưởng sản xuất bia mộ</li>
+                        <li>• Dịch vụ khắc tên chuyên nghiệp</li>
+                        <li>• Quy trình sản xuất tiêu chuẩn</li>
+                    </ul>
+                </div>
+                
+                <div class="advantage-card bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 card-shadow">
+                    <div class="icon-circle bg-purple-500 text-white">
+                        <i class="fas fa-truck text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-center">Logistics</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Đội xe cung ứng dịch vụ</li>
+                        <li>• Phục vụ 5 đám tang cùng lúc</li>
+                        <li>• Giao hàng tận nơi</li>
+                    </ul>
+                </div>
+                
+                <div class="advantage-card bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 card-shadow">
+                    <div class="icon-circle bg-orange-500 text-white">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-center">Nhân Lực</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Nhân viên bán hàng kinh nghiệm</li>
+                        <li>• Nhân viên thiết kế chuyên nghiệp</li>
+                        <li>• Đội ngũ vận hành 20 năm</li>
+                    </ul>
+                </div>
+                
+                <div class="advantage-card bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-6 card-shadow">
+                    <div class="icon-circle bg-red-500 text-white">
+                        <i class="fas fa-network-wired text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-center">Liên Kết</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Đối tác dịch vụ tang lễ địa phương</li>
+                        <li>• Liên kết các chùa tại địa phương</li>
+                        <li>• Hợp tác các nhà thờ</li>
+                    </ul>
+                </div>
+                
+                <div class="advantage-card bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-6 card-shadow">
+                    <div class="icon-circle bg-teal-500 text-white">
+                        <i class="fas fa-award text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-center">Kinh Nghiệm</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• 20 năm kinh nghiệm lĩnh vực</li>
+                        <li>• Am hiểu quy trình tang lễ</li>
+                        <li>• Uy tín trong cộng đồng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kế Hoạch Triển Khai -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Kế Hoạch Triển Khai</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg p-8 card-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">1</div>
+                        <h3 class="text-2xl font-semibold text-gray-800">Giai Đoạn Thử Nghiệm</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Địa điểm</h4>
+                                <p class="text-gray-600">Xã Ninh Phước, Khánh Hòa</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-bullseye text-blue-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Mục tiêu</h4>
+                                <p class="text-gray-600">Thử nghiệm mô hình, đánh giá hiệu quả kinh doanh</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-chart-line text-blue-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Đánh giá</h4>
+                                <p class="text-gray-600">Phân tích kết quả, điều chỉnh chiến lược</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 card-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">2</div>
+                        <h3 class="text-2xl font-semibold text-gray-800">Giai Đoạn Mở Rộng</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-expand-arrows-alt text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Quy mô</h4>
+                                <p class="text-gray-600">Mở rộng thêm các điểm bán mới</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-users text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Tiêu chí</h4>
+                                <p class="text-gray-600">Khu dân cư trên 100,000 người</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-trophy text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Điều kiện</h4>
+                                <p class="text-gray-600">Dựa trên kết quả tích cực giai đoạn 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thị Trường & Đối Tượng -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Thị Trường & Đối Tượng</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="icon-circle bg-blue-500 text-white">
+                        <i class="fas fa-map text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Khu Vực Hoạt Động</h3>
+                    <p class="text-gray-600">Tỉnh Khánh Hòa mới (bao gồm Khánh Hòa và Ninh Thuận)</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="icon-circle bg-green-500 text-white">
+                        <i class="fas fa-praying-hands text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Đối Tượng Phật Giáo</h3>
+                    <p class="text-gray-600">Cung cấp đầy đủ vật tư tang lễ theo nghi thức Phật giáo truyền thống</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="icon-circle bg-purple-500 text-white">
+                        <i class="fas fa-cross text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Đối Tượng Công Giáo</h3>
+                    <p class="text-gray-600">Phục vụ tang lễ Công giáo với các vật tư và nghi thức phù hợp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tầm Nhìn -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Tầm Nhìn & Sứ Mệnh</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white bg-opacity-10 rounded-lg p-8">
+                    <h3 class="text-2xl font-semibold mb-4">Tầm Nhìn</h3>
+                    <p class="text-lg leading-relaxed">
+                        Trở thành chuỗi cửa hàng vật tư tang lễ hàng đầu tại Khánh Hòa và Ninh Thuận, 
+                        cung cấp dịch vụ toàn diện và chất lượng cao cho cộng đồng.
+                    </p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 rounded-lg p-8">
+                    <h3 class="text-2xl font-semibold mb-4">Sứ Mệnh</h3>
+                    <p class="text-lg leading-relaxed">
+                        Hỗ trợ các gia đình trong những lúc khó khăn với dịch vụ chuyên nghiệp, 
+                        tận tâm và giá cả hợp lý, tôn trọng tín ngưỡng và truyền thống.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-4">Kho Vật Tư Tang Lễ An Lạc</h3>
+            <p class="text-gray-400 mb-4">Dự án kinh doanh chuỗi cửa hàng vật tư tang lễ</p>
+            <div class="flex justify-center space-x-6">
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    <span>Đường 703, Xã Ninh Phước, Khánh Hòa</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-building mr-2"></i>
+                    <span>Kế thừa từ Tang lễ Yên Bình</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
